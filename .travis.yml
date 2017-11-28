@@ -4,5 +4,6 @@ python:
   - "3.6"
 install:
   - pip install pytest
+  - conda install numpy
 script:
   - pytest tests.py

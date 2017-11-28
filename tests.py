@@ -1,4 +1,5 @@
 from mymean import mean
+import numpy as np
 
 def test_mean():
     assert mean([1]) == 1
