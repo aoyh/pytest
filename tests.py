@@ -35,3 +35,11 @@ def test_complex():
     obs = mean(num_list)
     exp = NotImplemented
     assert obs == exp
+
+def test_numpy():
+    # Generate 10,000 uniformly distributed random numbers with numpy.
+    num_list = np.random.uniform(0, 1, 10000)
+    # Test that your mean is a proper numerical match to the numpy one.
+    obs = mean(num_list)
+    exp = np.mean(num_list)
+    assert obs == exp
