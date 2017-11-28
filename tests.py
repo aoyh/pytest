@@ -43,4 +43,4 @@ def test_numpy():
     # Test that your mean is a proper numerical match to the numpy one.
     obs = mean(num_list)
     exp = np.mean(num_list)
-    assert obs == exp
+    np.testing.assert_almost_equal(obs, exp)
